@@ -12,11 +12,13 @@ class ThirdViewController: UIViewController {
     
     var currentNum : Int = 0
     
-    @IBOutlet weak var label: UILabel!
+    // Label that increments by 1
+    @IBOutlet weak var counterLabel: UILabel!
 
+    // "Start Counting!" button that triggers the incremeting and updates label
     @IBAction func counterButton(_ sender: Any) {
-        currentNum = Int(label.text!)! + 1
-        label.text = String(currentNum)
+        currentNum = Int(counterLabel.text!)! + 1
+        counterLabel.text = String(currentNum)
     }
     
     override func viewDidLoad() {

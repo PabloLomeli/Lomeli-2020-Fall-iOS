@@ -9,10 +9,18 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    @IBOutlet weak var displayNotes: UITextView!
+    @IBOutlet weak var textToInsert: UITextField!
+    
+    @IBAction func enterTextBtn(_ sender: Any) {
+        displayNotes.text = displayNotes.text! + textToInsert.text! + "\n"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        displayNotes.isEditable = false;
     }
 
 
