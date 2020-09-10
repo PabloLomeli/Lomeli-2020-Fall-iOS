@@ -9,14 +9,21 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
+    
+    var currentNum : Int = 0
+    
+    @IBOutlet weak var label: UILabel!
 
+    @IBAction func counterButton(_ sender: Any) {
+        currentNum = Int(label.text!)! + 1
+        label.text = String(currentNum)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
-
     /*
     // MARK: - Navigation
 

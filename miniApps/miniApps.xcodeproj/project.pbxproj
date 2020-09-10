@@ -14,6 +14,7 @@
 		DE8484702501EBF2000EE152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE84846E2501EBF2000EE152 /* Main.storyboard */; };
 		DE8484722501EBF4000EE152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8484712501EBF4000EE152 /* Assets.xcassets */; };
 		DE8484752501EBF4000EE152 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8484732501EBF4000EE152 /* LaunchScreen.storyboard */; };
+		DE91D23D2509B725005D8745 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE91D23C2509B725005D8745 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DE8484712501EBF4000EE152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE8484742501EBF4000EE152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE8484762501EBF4000EE152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE91D23C2509B725005D8745 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				DE8484682501EBF2000EE152 /* SceneDelegate.swift */,
 				DE84846A2501EBF2000EE152 /* FirstViewController.swift */,
 				DE84846C2501EBF2000EE152 /* SecondViewController.swift */,
+				DE91D23C2509B725005D8745 /* ThirdViewController.swift */,
 				DE84846E2501EBF2000EE152 /* Main.storyboard */,
 				DE8484712501EBF4000EE152 /* Assets.xcassets */,
 				DE8484732501EBF4000EE152 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				DE84846D2501EBF2000EE152 /* SecondViewController.swift in Sources */,
 				DE84846B2501EBF2000EE152 /* FirstViewController.swift in Sources */,
+				DE91D23D2509B725005D8745 /* ThirdViewController.swift in Sources */,
 				DE8484672501EBF2000EE152 /* AppDelegate.swift in Sources */,
 				DE8484692501EBF2000EE152 /* SceneDelegate.swift in Sources */,
 			);
