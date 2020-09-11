@@ -11,6 +11,7 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var player1Image: UIImageView!
+    @IBOutlet weak var winStatusLabel: UILabel!
     @IBOutlet weak var player2Image: UIImageView!
     
     var randNum1 : Int = 0
@@ -66,6 +67,7 @@ class SecondViewController: UIViewController {
         if randNum1 == 16 {
             player1Image.image = UIImage(named:"mudkip.png")
         }
+        viewDidLoad()
     }
     
     @IBAction func player2Roll(_ sender: Any) {
@@ -118,11 +120,24 @@ class SecondViewController: UIViewController {
         if randNum2 == 16 {
             player2Image.image = UIImage(named:"mudkip.png")
         }
+        viewDidLoad()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        if(randNum1 > randNum2)
+        {
+            winStatusLabel.text = "Player 1 Wins!"
+        }
+        if(randNum1 < randNum2)
+        {
+            winStatusLabel.text = "Player 2 Wins!"
+        }
+        if(randNum1 == randNum2)
+        {
+            winStatusLabel.text = "It's a TIE!"
+        }
     }
 
 
