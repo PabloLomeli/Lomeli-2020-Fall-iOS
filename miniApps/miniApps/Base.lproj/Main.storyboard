@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +19,7 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to jot something down quick? Then use this tool!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
                                 <rect key="frame" x="31.5" y="114" width="351" height="17"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -26,11 +28,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BH-F6-Gma">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BH-F6-Gma">
                                 <rect key="frame" x="326" y="161" width="57" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Submit">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="enterTextBtn:" destination="9pv-A4-QxB" eventType="touchUpInside" id="vRc-RW-NR9"/>
@@ -38,19 +40,20 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qnk-qw-OPy">
                                 <rect key="frame" x="32" y="231" width="352" height="552"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="My To-Do List" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
                                 <rect key="frame" x="99.5" y="56" width="215" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="15" id="0fz-2Q-W3H"/>
                             <constraint firstItem="HgJ-ek-ELY" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="32" id="7dP-ml-jk3"/>
@@ -67,7 +70,6 @@
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="12" id="m6l-mX-v66"/>
                             <constraint firstItem="qnk-qw-OPy" firstAttribute="top" secondItem="0BH-F6-Gma" secondAttribute="bottom" constant="40" id="mHh-zM-qpc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Notes" image="pencil" catalog="system" id="acW-dT-cKf"/>
                     <connections>
@@ -87,15 +89,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05I-um-pVE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05I-um-pVE">
                                 <rect key="frame" x="212" y="550" width="107" height="72"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="Fyb-1b-vun"/>
                                     <constraint firstAttribute="width" constant="107" id="Opi-sV-QcR"/>
                                 </constraints>
                                 <state key="normal" title="Fire">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -117,24 +119,24 @@
                                     <action selector="fireBtn8:" destination="oDl-X7-7iP" eventType="touchUpInside" id="Yrn-lE-Z36"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8SB-Xw-7Jy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8SB-Xw-7Jy">
                                 <rect key="frame" x="187" y="412" width="107" height="72"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Fire">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="fireBtn6:" destination="oDl-X7-7iP" eventType="touchUpInside" id="bi3-Vk-6yp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puk-is-bl5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puk-is-bl5">
                                 <rect key="frame" x="38" y="660" width="107" height="72"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="107" id="Duy-68-CLs"/>
                                 </constraints>
                                 <state key="normal" title="Fire">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -150,15 +152,15 @@
                                     <action selector="fireBtn9:" destination="oDl-X7-7iP" eventType="touchUpInside" id="79Q-cz-qT4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2J-oM-rks">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2J-oM-rks">
                                 <rect key="frame" x="262" y="295" width="107" height="72"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="107" id="aq4-bf-zQP"/>
                                     <constraint firstAttribute="height" constant="72" id="htU-o7-mYW"/>
                                 </constraints>
                                 <state key="normal" title="Fire">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -180,9 +182,9 @@
                                     <action selector="fireBtn4:" destination="oDl-X7-7iP" eventType="touchUpInside" id="VRx-gx-oXW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpp-VA-Hrd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpp-VA-Hrd">
                                 <rect key="frame" x="66" y="504" width="107" height="72"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="107" id="9z8-0W-55h"/>
                                     <constraint firstAttribute="height" constant="72" id="DgW-6a-B48"/>
@@ -190,7 +192,7 @@
                                     <constraint firstAttribute="width" constant="107" id="h4i-Op-oMa"/>
                                 </constraints>
                                 <state key="normal" title="Fire">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -216,14 +218,14 @@
                                     <action selector="fireBtn7:" destination="oDl-X7-7iP" eventType="touchUpInside" id="S4a-pR-M0m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHH-Nq-11Q">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHH-Nq-11Q">
                                 <rect key="frame" x="233" y="683" width="107" height="72"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="107" id="D2B-2w-L4r"/>
                                 </constraints>
                                 <state key="normal" title="Fire">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -239,16 +241,16 @@
                                     <action selector="fireBtn10:" destination="oDl-X7-7iP" eventType="touchUpInside" id="xab-27-zBu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBx-K6-L8p">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBx-K6-L8p">
                                 <rect key="frame" x="248" y="142" width="107" height="72"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="34h-QS-Ka5"/>
                                     <constraint firstAttribute="width" constant="107" id="FQg-pD-xy3"/>
                                     <constraint firstAttribute="width" constant="107" id="Fcc-6M-jQB"/>
                                 </constraints>
                                 <state key="normal" title="Fire">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -272,15 +274,15 @@
                                     <action selector="fireBtn2:" destination="oDl-X7-7iP" eventType="touchUpInside" id="ch6-s2-m6J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jc7-yh-q7b">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jc7-yh-q7b">
                                 <rect key="frame" x="46" y="334" width="107" height="72"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="anV-Uk-N1l"/>
                                     <constraint firstAttribute="width" constant="107" id="ybr-2Z-0ah"/>
                                 </constraints>
                                 <state key="normal" title="Fire">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -300,7 +302,7 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="PUT OUT THE FIRE!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yas-GJ-e7y">
                                 <rect key="frame" x="52" y="54" width="312" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="btU-6k-ooj"/>
                                     <constraint firstAttribute="height" constant="43" id="dwP-Qe-8Ba"/>
@@ -324,9 +326,9 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df0-SA-CY2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df0-SA-CY2">
                                 <rect key="frame" x="28" y="128" width="107" height="72"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="107" id="5Xj-6N-UuI"/>
                                     <constraint firstAttribute="height" constant="72" id="7Qk-57-Ynz"/>
@@ -334,7 +336,7 @@
                                     <constraint firstAttribute="height" constant="72" id="tCh-Mq-jnh"/>
                                 </constraints>
                                 <state key="normal" title="Fire">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -362,7 +364,7 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Good job taking out the fire!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tQt-29-Kkt">
                                 <rect key="frame" x="38" y="763" width="344" height="35"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Xol-PG-Hvg"/>
                                 </constraints>
@@ -379,16 +381,16 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKb-w1-AMT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKb-w1-AMT">
                                 <rect key="frame" x="111" y="235" width="107" height="72"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="107" id="Ydi-st-dnn"/>
                                     <constraint firstAttribute="width" constant="107" id="q3i-Zf-b11"/>
                                     <constraint firstAttribute="height" constant="72" id="vqe-WL-x0o"/>
                                 </constraints>
                                 <state key="normal" title="Fire">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -413,7 +415,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="S2F-F5-Ld1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tQt-29-Kkt" firstAttribute="top" secondItem="I2J-oM-rks" secondAttribute="bottom" constant="8" id="0Bu-Di-xMX"/>
                             <constraint firstItem="gKb-w1-AMT" firstAttribute="top" secondItem="Df0-SA-CY2" secondAttribute="bottom" constant="35" id="4BC-o9-9Ht"/>
@@ -482,7 +485,6 @@
                             <constraint firstItem="I2J-oM-rks" firstAttribute="top" secondItem="jBx-K6-L8p" secondAttribute="bottom" constant="81" id="xjW-oh-9gM"/>
                             <constraint firstItem="jBx-K6-L8p" firstAttribute="leading" secondItem="Df0-SA-CY2" secondAttribute="trailing" constant="41" id="yQ2-p1-KkO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="S2F-F5-Ld1"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="50M-VS-QLe"/>
@@ -647,8 +649,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Paper, Rock, Lightsaber..." textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="61" y="44" width="292" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="63.5" y="44" width="287.5" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="0Kd-Sc-2Uw"/>
                                 </constraints>
@@ -666,7 +668,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nb0-lZ-zF7">
-                                <rect key="frame" x="61" y="467.5" width="80" height="20.5"/>
+                                <rect key="frame" x="63.5" y="467.5" width="77.5" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="BzA-7k-pGi"/>
                                 </constraints>
@@ -687,15 +689,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightsaber" translatesAutoresizingMaskIntoConstraints="NO" id="qSk-dI-jws">
                                 <rect key="frame" x="82" y="504" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKF-hb-6Sv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKF-hb-6Sv">
                                 <rect key="frame" x="152" y="675" width="100" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="3Z2-BS-WBT"/>
                                     <constraint firstAttribute="height" constant="30" id="do1-SO-xzw"/>
                                 </constraints>
                                 <state key="normal" title="ROLL">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -717,15 +719,15 @@
                                     <action selector="player2Roll:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="CxC-pw-zzy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErZ-Eb-HC8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErZ-Eb-HC8">
                                 <rect key="frame" x="152" y="382" width="100" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9Ls-dX-fzn"/>
                                     <constraint firstAttribute="width" constant="100" id="dgm-58-JOd"/>
                                 </constraints>
                                 <state key="normal" title="ROLL">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -748,7 +750,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKa-se-JqZ">
-                                <rect key="frame" x="61" y="173" width="80" height="21"/>
+                                <rect key="frame" x="63.5" y="173" width="77.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="P7j-oA-yRO"/>
                                     <constraint firstAttribute="height" constant="21" id="asG-Zd-dh2"/>
@@ -826,7 +828,8 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="dM9-zR-nKL" firstAttribute="bottom" secondItem="qSk-dI-jws" secondAttribute="bottom" id="01z-Tx-LRc"/>
                             <constraint firstItem="dM9-zR-nKL" firstAttribute="top" secondItem="jKa-se-JqZ" secondAttribute="bottom" constant="8" id="1Ze-T8-ZVa"/>
@@ -884,7 +887,6 @@
                             <constraint firstItem="dM9-zR-nKL" firstAttribute="leading" secondItem="qSk-dI-jws" secondAttribute="leading" id="zAn-ht-BJ4"/>
                             <constraint firstItem="jKa-se-JqZ" firstAttribute="leading" secondItem="nb0-lZ-zF7" secondAttribute="leading" id="zdz-4W-prW"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="D33-54-1Ks"/>
@@ -1043,8 +1045,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5M-y7-ohP">
-                                <rect key="frame" x="86" y="77" width="243" height="60"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="120" y="77" width="134.5" height="60"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="WZG-Hs-UqN"/>
                                 </constraints>
@@ -1052,16 +1054,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7V-HA-Gn9">
-                                <rect key="frame" x="48" y="706" width="319" height="57"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7V-HA-Gn9">
+                                <rect key="frame" x="48" y="706" width="278" height="57"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="5CO-YM-qlc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <state key="normal" title="Start Counting!">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="opaqueSeparatorColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                 </state>
                                 <connections>
@@ -1069,24 +1071,21 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="QeE-Uo-UEH"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="QeE-Uo-UEH" firstAttribute="trailing" secondItem="f5M-y7-ohP" secondAttribute="trailing" constant="85" id="MTx-XM-Dbd"/>
                             <constraint firstItem="QeE-Uo-UEH" firstAttribute="trailing" secondItem="nkl-ny-OEz" secondAttribute="trailing" constant="83" id="UWE-6d-fHI"/>
                             <constraint firstItem="awG-rT-gbR" firstAttribute="centerY" secondItem="nkl-ny-OEz" secondAttribute="centerY" id="Vfb-2M-rFS"/>
                             <constraint firstItem="awG-rT-gbR" firstAttribute="top" secondItem="f5M-y7-ohP" secondAttribute="bottom" constant="38" id="aAz-Ky-wWS"/>
                             <constraint firstItem="nkl-ny-OEz" firstAttribute="top" secondItem="f5M-y7-ohP" secondAttribute="bottom" constant="8" id="h4I-3O-duI"/>
-                            <constraint firstItem="f5M-y7-ohP" firstAttribute="leading" secondItem="QeE-Uo-UEH" secondAttribute="leading" constant="86" id="jUX-LB-FdS"/>
                             <constraint firstItem="nkl-ny-OEz" firstAttribute="leading" secondItem="awG-rT-gbR" secondAttribute="trailing" constant="8" id="koE-Th-evO"/>
                             <constraint firstItem="awG-rT-gbR" firstAttribute="leading" secondItem="QeE-Uo-UEH" secondAttribute="leading" constant="70" id="lU8-9R-PDe"/>
                             <constraint firstItem="QeE-Uo-UEH" firstAttribute="bottom" secondItem="D7V-HA-Gn9" secondAttribute="bottom" constant="50" id="mBk-YE-7QX"/>
                             <constraint firstItem="D7V-HA-Gn9" firstAttribute="centerX" secondItem="f5M-y7-ohP" secondAttribute="centerX" id="mvl-4m-cfE"/>
                             <constraint firstItem="D7V-HA-Gn9" firstAttribute="leading" secondItem="QeE-Uo-UEH" secondAttribute="leading" constant="48" id="qiD-cG-hXP"/>
-                            <constraint firstItem="f5M-y7-ohP" firstAttribute="centerX" secondItem="Xgs-5q-DyM" secondAttribute="centerX" id="svJ-Tv-cdX"/>
                             <constraint firstItem="nkl-ny-OEz" firstAttribute="leading" secondItem="awG-rT-gbR" secondAttribute="trailing" constant="8" id="wiN-Cq-jn0"/>
                             <constraint firstItem="f5M-y7-ohP" firstAttribute="top" secondItem="QeE-Uo-UEH" secondAttribute="top" constant="33" id="ydT-Dk-A1h"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="QeE-Uo-UEH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Counter" image="number" catalog="system" id="iek-O2-xJx"/>
                     <connections>
@@ -1119,10 +1118,88 @@
         </scene>
     </scenes>
     <resources>
-        <image name="flame.fill" catalog="system" width="109" height="128"/>
+        <image name="flame.fill" catalog="system" width="108" height="128"/>
         <image name="lightsaber" width="425" height="425"/>
         <image name="number" catalog="system" width="128" height="124"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
