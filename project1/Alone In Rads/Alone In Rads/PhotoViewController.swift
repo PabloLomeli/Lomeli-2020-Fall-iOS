@@ -19,7 +19,8 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         imagePickerController.delegate = self
         imagePickerController.allowsEditing = true
 
-        // Do any additional setup after loading the view.
+        
+        // add persistent avatar image
     }
     
 
@@ -56,7 +57,6 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
             let choosenImage = info[.editedImage] as! UIImage
 
             avatar.image = choosenImage
-            
             dismiss(animated: true, completion: nil)
         }
 

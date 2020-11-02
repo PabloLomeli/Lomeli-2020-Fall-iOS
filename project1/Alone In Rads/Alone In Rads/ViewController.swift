@@ -33,7 +33,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
             tableView.deselectRow(at: indexPath, animated: false)
-            if( indexPath.row == 1){
+            if( indexPath.row == 0){
+                let detailsViewController = (storyboard?.instantiateViewController(identifier: "GameViewController"))!
+                present(detailsViewController, animated: true, completion: nil)
+            }
+            else if( indexPath.row == 1){
                 let detailsViewController = (storyboard?.instantiateViewController(identifier: "PhotoViewController"))!
                 present(detailsViewController, animated: true, completion: nil)
             }
@@ -41,8 +45,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let detailsViewController = (storyboard?.instantiateViewController(identifier: "MapViewController"))!
                 present(detailsViewController, animated: true, completion: nil)
             }
-            else{
-                tableView.cellForRow(at: indexPath)?.accessoryType = .none
+            else if( indexPath.row == 3){
+                let detailsViewController = (storyboard?.instantiateViewController(identifier: "SettingsViewController"))!
+                present(detailsViewController, animated: true, completion: nil)
+            }
+            else if( indexPath.row == 4){
+                let detailsViewController = (storyboard?.instantiateViewController(identifier: "ExtrasViewController"))!
+                present(detailsViewController, animated: true, completion: nil)
             }
         }
 
