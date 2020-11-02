@@ -56,7 +56,7 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
             let choosenImage = info[.editedImage] as! UIImage
 
             avatar.image = choosenImage
-
+            
             dismiss(animated: true, completion: nil)
         }
 
