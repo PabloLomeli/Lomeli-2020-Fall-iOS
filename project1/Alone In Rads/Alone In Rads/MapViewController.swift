@@ -9,7 +9,7 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class MapViewController: UIViewController, CLLocationManagerDelegate, UIGestureRecognizerDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var myMap: MKMapView!
     @IBOutlet weak var labelAdd: UILabel!
