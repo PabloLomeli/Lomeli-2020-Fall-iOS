@@ -8,14 +8,18 @@
 import UIKit
 
 class GameViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func playBtn(_ sender: AnyObject) {
+        let mainMenu = (storyboard?.instantiateViewController(identifier: "ViewController"))!
+        present(mainMenu, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

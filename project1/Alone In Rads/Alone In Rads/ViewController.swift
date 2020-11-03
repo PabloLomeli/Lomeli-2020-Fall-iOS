@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
             tableView.deselectRow(at: indexPath, animated: false)
             if( indexPath.row == 0){
-                let detailsViewController = (storyboard?.instantiateViewController(identifier: "GameViewController"))!
+                let detailsViewController = (storyboard?.instantiateViewController(identifier: "PlayViewController"))!
                 present(detailsViewController, animated: true, completion: nil)
             }
             else if( indexPath.row == 1){

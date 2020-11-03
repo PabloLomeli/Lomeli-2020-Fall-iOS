@@ -55,7 +55,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         }
         let mapRegion = MKCoordinateRegion(center: userLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
         myMap.setRegion(mapRegion, animated: true)
-
+        
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error \(error)")
