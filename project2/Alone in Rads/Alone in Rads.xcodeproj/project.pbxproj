@@ -20,6 +20,7 @@
 		DE12A1AC254FC7AE00F30D3D /* ExtrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A1AB254FC7AE00F30D3D /* ExtrasViewController.swift */; };
 		DE1C58672563738F00D0FB40 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C58662563738F00D0FB40 /* DatabaseController.swift */; };
 		DE1C586B256374F500D0FB40 /* RadsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE1C5869256374F500D0FB40 /* RadsData.xcdatamodeld */; };
+		DE1C586F256382FA00D0FB40 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C586E256382FA00D0FB40 /* PlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DE12A1AB254FC7AE00F30D3D /* ExtrasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasViewController.swift; sourceTree = "<group>"; };
 		DE1C58662563738F00D0FB40 /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		DE1C586A256374F500D0FB40 /* RadsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RadsData.xcdatamodel; sourceTree = "<group>"; };
+		DE1C586E256382FA00D0FB40 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +74,9 @@
 			children = (
 				DE12A187254F867200F30D3D /* AppDelegate.swift */,
 				DE12A189254F867200F30D3D /* SceneDelegate.swift */,
-				DE12A18B254F867200F30D3D /* ViewController.swift */,
 				DE12A1A4254FC76000F30D3D /* GameViewController.swift */,
+				DE12A18B254F867200F30D3D /* ViewController.swift */,
+				DE1C586E256382FA00D0FB40 /* PlayViewController.swift */,
 				DE12A19C254F902F00F30D3D /* PhotoViewController.swift */,
 				DE12A1A0254F99B100F30D3D /* MapViewController.swift */,
 				DE12A1A7254FC77200F30D3D /* SettingsViewController.swift */,
@@ -162,6 +165,7 @@
 				DE12A19D254F902F00F30D3D /* PhotoViewController.swift in Sources */,
 				DE12A1A8254FC77200F30D3D /* SettingsViewController.swift in Sources */,
 				DE12A1AC254FC7AE00F30D3D /* ExtrasViewController.swift in Sources */,
+				DE1C586F256382FA00D0FB40 /* PlayViewController.swift in Sources */,
 				DE12A188254F867200F30D3D /* AppDelegate.swift in Sources */,
 				DE1C58672563738F00D0FB40 /* DatabaseController.swift in Sources */,
 				DE12A1A1254F99B100F30D3D /* MapViewController.swift in Sources */,
