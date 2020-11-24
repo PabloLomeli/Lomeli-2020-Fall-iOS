@@ -1,9 +1,7 @@
-# Project 1
+# Project 2
 
-This will be the first iteration of Alone in Rads. 
+This is the second iteration of Alone in Rads that will feature using data core and some other requirements.
 
-The app so far is kind of what I want it to look like, depending on how project 2 and final project go I want to keep the menu I have for in place that uses the UITable look. I'm not sure how core data will be used yet but I'm excited to look into it more to make my avatar and map data persistent and be used throughout "the game".
+So far, I've gotten the app icon to work, but the launch screen image is not working for some reason, but it's still set in xCode so I don't know after looking at a bunch of forums and suggestions.
 
-I want to add a feature that updates your location depending on where you move the map to and need to get a good sketch down for the main menu picture instead of the trash icon I have in place.
-
-Testing commit.
+I then added core data entities and their relationships and just require to implement storing and retrieving the data that the player will input or use.
