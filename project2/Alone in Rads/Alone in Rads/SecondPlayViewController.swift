@@ -1,13 +1,13 @@
 //
-//  PlayViewController.swift
+//  SecondPlayViewController.swift
 //  Alone in Rads
 //
-//  Created by Pablo Lomeli on 11/16/20.
+//  Created by Pablo Lomeli on 11/23/20.
 //
 
 import UIKit
 
-class PlayViewController: UIViewController {
+class SecondPlayViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,11 +15,7 @@ class PlayViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func savePlayerData(_ sender: Any) {
-        let detailsViewController = (storyboard?.instantiateViewController(identifier: "SecondPlayViewController"))!
-        present(detailsViewController, animated: true, completion: nil)
-    }
-    
+
     /*
     // MARK: - Navigation
 
