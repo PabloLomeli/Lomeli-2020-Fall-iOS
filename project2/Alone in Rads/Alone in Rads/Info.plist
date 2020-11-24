@@ -15,15 +15,15 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Lets take a look at where exactly you&apos;re at!</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Getting specific location data to display.</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Getting specific location data to display.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Lets take a look at where exactly you're at!</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

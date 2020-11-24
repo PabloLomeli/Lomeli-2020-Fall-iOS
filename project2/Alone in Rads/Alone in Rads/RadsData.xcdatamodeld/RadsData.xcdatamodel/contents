@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="ChoiceData" representedClassName="ChoiceData" syncable="YES" codeGenerationType="class">
+    <entity name="ChoiceData" representedClassName="ChoiceData" syncable="YES">
         <attribute name="choicebad" optional="YES" attributeType="String"/>
         <attribute name="choicegood" optional="YES" attributeType="String"/>
         <attribute name="choiceneither" optional="YES" attributeType="String"/>
         <relationship name="losecondition" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoryData" inverseName="losechoice" inverseEntity="StoryData"/>
         <relationship name="wincondition" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoryData" inverseName="winchoice" inverseEntity="StoryData"/>
     </entity>
-    <entity name="GameData" representedClassName="GameData" syncable="YES" codeGenerationType="class">
+    <entity name="GameData" representedClassName="GameData" syncable="YES">
         <attribute name="gamehealth" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="gamelocation" optional="YES" attributeType="String"/>
         <attribute name="gamestatusWL" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="playerlocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlayerData" inverseName="gamelocation" inverseEntity="PlayerData"/>
         <relationship name="storystatus" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoryData" inverseName="gamestatus" inverseEntity="StoryData"/>
     </entity>
-    <entity name="PlayerData" representedClassName="PlayerData" syncable="YES" codeGenerationType="class">
+    <entity name="PlayerData" representedClassName="PlayerData" syncable="YES">
         <attribute name="playerlocation" optional="YES" attributeType="String"/>
         <attribute name="playername" optional="YES" attributeType="String"/>
         <attribute name="playersex" optional="YES" attributeType="String"/>
         <relationship name="gamelocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameData" inverseName="playerlocation" inverseEntity="GameData"/>
     </entity>
-    <entity name="StoryData" representedClassName="StoryData" syncable="YES" codeGenerationType="class">
+    <entity name="StoryData" representedClassName="StoryData" syncable="YES">
         <attribute name="storycurrent" optional="YES" attributeType="String"/>
         <attribute name="storylosechoice" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="storystatus" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -30,9 +30,9 @@
         <relationship name="winchoice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChoiceData" inverseName="wincondition" inverseEntity="ChoiceData"/>
     </entity>
     <elements>
-        <element name="ChoiceData" positionX="-349.72265625" positionY="106.82421875" width="128" height="118"/>
-        <element name="GameData" positionX="-379.30859375" positionY="-123.98828125" width="128" height="118"/>
-        <element name="PlayerData" positionX="-167.0234375" positionY="-88.57421875" width="128" height="103"/>
-        <element name="StoryData" positionX="-608.53125" positionY="-88.28515625" width="128" height="148"/>
+        <element name="ChoiceData" positionX="-173.00390625" positionY="69.21484375" width="128" height="118"/>
+        <element name="GameData" positionX="-393.5703125" positionY="-111.15625" width="128" height="118"/>
+        <element name="PlayerData" positionX="-163.24609375" positionY="-98.5" width="128" height="103"/>
+        <element name="StoryData" positionX="-564.35546875" positionY="39.41015625" width="128" height="148"/>
     </elements>
 </model>

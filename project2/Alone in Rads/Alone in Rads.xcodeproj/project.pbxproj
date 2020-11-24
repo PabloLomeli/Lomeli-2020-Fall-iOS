@@ -15,17 +15,23 @@
 		DE12A194254F867200F30D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12A192254F867200F30D3D /* LaunchScreen.storyboard */; };
 		DE12A19D254F902F00F30D3D /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A19C254F902F00F30D3D /* PhotoViewController.swift */; };
 		DE12A1A1254F99B100F30D3D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A1A0254F99B100F30D3D /* MapViewController.swift */; };
-		DE12A1A5254FC76000F30D3D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A1A4254FC76000F30D3D /* GameViewController.swift */; };
 		DE12A1A8254FC77200F30D3D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A1A7254FC77200F30D3D /* SettingsViewController.swift */; };
 		DE12A1AC254FC7AE00F30D3D /* ExtrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A1AB254FC7AE00F30D3D /* ExtrasViewController.swift */; };
-		DE1C58672563738F00D0FB40 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C58662563738F00D0FB40 /* DatabaseController.swift */; };
 		DE1C586B256374F500D0FB40 /* RadsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE1C5869256374F500D0FB40 /* RadsData.xcdatamodeld */; };
 		DE1C586F256382FA00D0FB40 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C586E256382FA00D0FB40 /* PlayViewController.swift */; };
 		DE2F6377256CBCC200BC847F /* SecondPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F6376256CBCC200BC847F /* SecondPlayViewController.swift */; };
+		DEC14A2F256CEBBD000A51DC /* PlayerData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A2D256CEBBD000A51DC /* PlayerData+CoreDataClass.swift */; };
+		DEC14A30256CEBBD000A51DC /* PlayerData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A2E256CEBBD000A51DC /* PlayerData+CoreDataProperties.swift */; };
+		DEC14A38256CEC4D000A51DC /* StoryData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A32256CEC4D000A51DC /* StoryData+CoreDataClass.swift */; };
+		DEC14A39256CEC4D000A51DC /* StoryData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A33256CEC4D000A51DC /* StoryData+CoreDataProperties.swift */; };
+		DEC14A3A256CEC4D000A51DC /* GameData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A34256CEC4D000A51DC /* GameData+CoreDataClass.swift */; };
+		DEC14A3B256CEC4D000A51DC /* GameData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A35256CEC4D000A51DC /* GameData+CoreDataProperties.swift */; };
+		DEC14A3C256CEC4D000A51DC /* ChoiceData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A36256CEC4D000A51DC /* ChoiceData+CoreDataClass.swift */; };
+		DEC14A3D256CEC4D000A51DC /* ChoiceData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A37256CEC4D000A51DC /* ChoiceData+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE12A184254F867200F30D3D /* Alone in Rads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alone in Rads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE12A184254F867200F30D3D /* Alone in Rads */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Alone in Rads"; path = "Alone in Rads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE12A187254F867200F30D3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE12A189254F867200F30D3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DE12A18B254F867200F30D3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,13 +41,19 @@
 		DE12A195254F867200F30D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE12A19C254F902F00F30D3D /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		DE12A1A0254F99B100F30D3D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		DE12A1A4254FC76000F30D3D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DE12A1A7254FC77200F30D3D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DE12A1AB254FC7AE00F30D3D /* ExtrasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasViewController.swift; sourceTree = "<group>"; };
-		DE1C58662563738F00D0FB40 /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		DE1C586A256374F500D0FB40 /* RadsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RadsData.xcdatamodel; sourceTree = "<group>"; };
 		DE1C586E256382FA00D0FB40 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		DE2F6376256CBCC200BC847F /* SecondPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPlayViewController.swift; sourceTree = "<group>"; };
+		DEC14A2D256CEBBD000A51DC /* PlayerData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlayerData+CoreDataClass.swift"; path = "Alone in Rads/PlayerData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DEC14A2E256CEBBD000A51DC /* PlayerData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlayerData+CoreDataProperties.swift"; path = "Alone in Rads/PlayerData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DEC14A32256CEC4D000A51DC /* StoryData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoryData+CoreDataClass.swift"; path = "Alone in Rads/StoryData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DEC14A33256CEC4D000A51DC /* StoryData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoryData+CoreDataProperties.swift"; path = "Alone in Rads/StoryData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DEC14A34256CEC4D000A51DC /* GameData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameData+CoreDataClass.swift"; path = "Alone in Rads/GameData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DEC14A35256CEC4D000A51DC /* GameData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameData+CoreDataProperties.swift"; path = "Alone in Rads/GameData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DEC14A36256CEC4D000A51DC /* ChoiceData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ChoiceData+CoreDataClass.swift"; path = "Alone in Rads/ChoiceData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DEC14A37256CEC4D000A51DC /* ChoiceData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ChoiceData+CoreDataProperties.swift"; path = "Alone in Rads/ChoiceData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 		DE12A17B254F867200F30D3D = {
 			isa = PBXGroup;
 			children = (
+				DEC14A32256CEC4D000A51DC /* StoryData+CoreDataClass.swift */,
+				DEC14A33256CEC4D000A51DC /* StoryData+CoreDataProperties.swift */,
+				DEC14A34256CEC4D000A51DC /* GameData+CoreDataClass.swift */,
+				DEC14A35256CEC4D000A51DC /* GameData+CoreDataProperties.swift */,
+				DEC14A36256CEC4D000A51DC /* ChoiceData+CoreDataClass.swift */,
+				DEC14A37256CEC4D000A51DC /* ChoiceData+CoreDataProperties.swift */,
+				DEC14A2D256CEBBD000A51DC /* PlayerData+CoreDataClass.swift */,
+				DEC14A2E256CEBBD000A51DC /* PlayerData+CoreDataProperties.swift */,
 				DE12A186254F867200F30D3D /* Alone in Rads */,
 				DE12A185254F867200F30D3D /* Products */,
 			);
@@ -66,7 +86,7 @@
 		DE12A185254F867200F30D3D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE12A184254F867200F30D3D /* Alone in Rads.app */,
+				DE12A184254F867200F30D3D /* Alone in Rads */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,7 +96,6 @@
 			children = (
 				DE12A187254F867200F30D3D /* AppDelegate.swift */,
 				DE12A189254F867200F30D3D /* SceneDelegate.swift */,
-				DE12A1A4254FC76000F30D3D /* GameViewController.swift */,
 				DE12A18B254F867200F30D3D /* ViewController.swift */,
 				DE1C586E256382FA00D0FB40 /* PlayViewController.swift */,
 				DE2F6376256CBCC200BC847F /* SecondPlayViewController.swift */,
@@ -88,7 +107,6 @@
 				DE12A190254F867200F30D3D /* Assets.xcassets */,
 				DE12A192254F867200F30D3D /* LaunchScreen.storyboard */,
 				DE12A195254F867200F30D3D /* Info.plist */,
-				DE1C58662563738F00D0FB40 /* DatabaseController.swift */,
 				DE1C5869256374F500D0FB40 /* RadsData.xcdatamodeld */,
 			);
 			path = "Alone in Rads";
@@ -111,7 +129,7 @@
 			);
 			name = "Alone in Rads";
 			productName = "Alone in Rads";
-			productReference = DE12A184254F867200F30D3D /* Alone in Rads.app */;
+			productReference = DE12A184254F867200F30D3D /* Alone in Rads */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -164,17 +182,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC14A30256CEBBD000A51DC /* PlayerData+CoreDataProperties.swift in Sources */,
+				DEC14A3B256CEC4D000A51DC /* GameData+CoreDataProperties.swift in Sources */,
 				DE12A18C254F867200F30D3D /* ViewController.swift in Sources */,
+				DEC14A3A256CEC4D000A51DC /* GameData+CoreDataClass.swift in Sources */,
 				DE12A19D254F902F00F30D3D /* PhotoViewController.swift in Sources */,
 				DE2F6377256CBCC200BC847F /* SecondPlayViewController.swift in Sources */,
 				DE12A1A8254FC77200F30D3D /* SettingsViewController.swift in Sources */,
 				DE12A1AC254FC7AE00F30D3D /* ExtrasViewController.swift in Sources */,
+				DEC14A3D256CEC4D000A51DC /* ChoiceData+CoreDataProperties.swift in Sources */,
 				DE1C586F256382FA00D0FB40 /* PlayViewController.swift in Sources */,
+				DEC14A2F256CEBBD000A51DC /* PlayerData+CoreDataClass.swift in Sources */,
+				DEC14A38256CEC4D000A51DC /* StoryData+CoreDataClass.swift in Sources */,
+				DEC14A3C256CEC4D000A51DC /* ChoiceData+CoreDataClass.swift in Sources */,
 				DE12A188254F867200F30D3D /* AppDelegate.swift in Sources */,
-				DE1C58672563738F00D0FB40 /* DatabaseController.swift in Sources */,
 				DE12A1A1254F99B100F30D3D /* MapViewController.swift in Sources */,
+				DEC14A39256CEC4D000A51DC /* StoryData+CoreDataProperties.swift in Sources */,
 				DE1C586B256374F500D0FB40 /* RadsData.xcdatamodeld in Sources */,
-				DE12A1A5254FC76000F30D3D /* GameViewController.swift in Sources */,
 				DE12A18A254F867200F30D3D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +353,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Zoidelle.Alone-in-Rads";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -348,6 +373,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Zoidelle.Alone-in-Rads";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

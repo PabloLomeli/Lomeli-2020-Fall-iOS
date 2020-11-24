@@ -15,7 +15,8 @@ class SecondPlayViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var storyLog: UITextView!
+    
     /*
     // MARK: - Navigation
 
