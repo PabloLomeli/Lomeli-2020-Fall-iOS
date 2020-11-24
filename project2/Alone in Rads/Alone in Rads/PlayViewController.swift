@@ -25,9 +25,11 @@ class PlayViewController: UIViewController {
         let pName = playerName.text
         let pSex = playerSex.text
         
+        let newPlayer = PlayerData(context: self.context)
+        newPlayer.playername = pName
+        newPlayer.playersex = pSex
         
-        
-        
+        try! self.context.save()
         
         let detailsViewController = (storyboard?.instantiateViewController(identifier: "SecondPlayViewController"))!
         present(detailsViewController, animated: true, completion: nil)

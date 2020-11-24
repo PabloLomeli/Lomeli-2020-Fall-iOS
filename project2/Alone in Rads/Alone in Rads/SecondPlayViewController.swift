@@ -8,10 +8,26 @@
 import UIKit
 
 class SecondPlayViewController: UIViewController {
-
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var newP:[PlayerData]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        do {
+            self.newP = try context.fetch(PlayerData.fetchRequest())
+        }
+        catch{
+            
+        }
+        
+        let currentName = (self.newP?.last?.playername)!
+        
+        let updatedStory = storyLog.text.replacingOccurrences(of: "*insert name*", with: currentName)
+        
+        storyLog.text = updatedStory
         // Do any additional setup after loading the view.
     }
     
