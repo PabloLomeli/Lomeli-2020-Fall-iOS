@@ -16,6 +16,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var newP:[PlayerData]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,7 +43,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         //self.labelLongi.text = "\(userLocation.coordinate.longitude)"
 
         let geocoder = CLGeocoder()
-        geocoder.reverseGeocodeLocation(userLocation) { (placemarks, error) in
+        geocoder.reverseGeocodeLocation(userLocation) { [self] (placemarks, error) in
             if (error != nil){
                 print("error in reverseGeocode")
             }
@@ -51,6 +55,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 print(placemark.country!)
 
                 self.labelAdd.text = "\(placemark.locality!), \(placemark.administrativeArea!), \(placemark.country!)"
+                
+                do {
+                    self.newP = try context.fetch(PlayerData.fetchRequest())
+                }
+                catch{
+                    
+                }
+                
+                newP?.last?.playerlocation = "\(placemark.locality!), \(placemark.administrativeArea!), \(placemark.country!)"
+                
+                try! self.context.save()
             }
         }
         let mapRegion = MKCoordinateRegion(center: userLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))

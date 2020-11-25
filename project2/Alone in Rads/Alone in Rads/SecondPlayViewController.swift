@@ -25,9 +25,13 @@ class SecondPlayViewController: UIViewController {
         
         let currentName = (self.newP?.last?.playername)!
         
+        let currentLoc = (self.newP?.last?.playerlocation)!
+        
         let updatedStory = storyLog.text.replacingOccurrences(of: "*insert name*", with: currentName)
         
-        storyLog.text = updatedStory
+        let updatedStory2 = updatedStory.replacingOccurrences(of: "*insert location*", with: currentLoc)
+        
+        storyLog.text = updatedStory2
         // Do any additional setup after loading the view.
     }
     

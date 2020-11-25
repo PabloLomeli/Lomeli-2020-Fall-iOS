@@ -35,6 +35,10 @@ class PlayViewController: UIViewController {
         present(detailsViewController, animated: true, completion: nil)
     }
     
+    @IBAction func continueWOC(_ sender: Any) {
+        let detailsViewController = (storyboard?.instantiateViewController(identifier: "SecondPlayViewController"))!
+        present(detailsViewController, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
