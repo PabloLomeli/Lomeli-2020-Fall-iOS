@@ -10,8 +10,6 @@ import CoreData
 
 class PlayViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -38,6 +36,8 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var playerSex: UITextField!
     @IBOutlet weak var playerAge: UITextField!
     
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     var currentG:[GameData]?
     var currentL:[LocationData]?
     var players:[PlayerData]?
@@ -50,6 +50,8 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let currentPlayer = PlayerData(context: self.context)
         
+        let newG = GameData(context: self.context)
+        
         // grab latest location data to use
         do {
             self.currentL = try context.fetch(LocationData.fetchRequest())
@@ -57,8 +59,6 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
         catch{
             
         }
-        
-        let newG = GameData(context: self.context)
         
         if(currentL?.last?.fullLocation != nil){
             newG.gamelocation = currentL?.last?.fullLocation
@@ -71,6 +71,8 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
         currentPlayer.playername = pName
         currentPlayer.playersex = pSex
         currentPlayer.playerage = pAge
+        
+        currentPlayer.currentGame = newG
         
         try! self.context.save()
         
@@ -85,8 +87,7 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     
-    // player saves logic
-    
+    // player saves table logic
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return players?.count ?? 0
     }
@@ -106,21 +107,7 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
             tableView.deselectRow(at: indexPath, animated: false)
-            if( indexPath.row == 0){
-                
-            }
-            else if( indexPath.row == 1){
-                
-            }
-            else if( indexPath.row == 2){
-                
-            }
-            else if( indexPath.row == 3){
-                
-            }
-            else if( indexPath.row == 4){
-                
-            }
+            // need to add save selection functionality
         }
 
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
