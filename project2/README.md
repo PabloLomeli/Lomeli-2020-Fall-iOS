@@ -8,4 +8,4 @@ I then added core data entities and their relationships and just require to impl
 
 I'm not sure how far we have to go into implementing each entitie and relationship we made for the core data requirement, but I've made use of it by storing a players name, then creating a game state that will save that, and also store the latest location available at character creation time. So a location isn't required, the game will tell you to set your location, but is entirely optional. No errors will be thrown at the user like it did to me when I was first debugging this.
 
-
+After minimum requirements, I just need to polish up the features I wanted implemented like the 'settings' option and having the UI display character stats, working save states, gameplay functionality and knowing what to do with 'extra' screen.
