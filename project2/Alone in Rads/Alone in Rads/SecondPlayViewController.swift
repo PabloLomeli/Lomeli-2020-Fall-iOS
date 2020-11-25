@@ -13,11 +13,15 @@ class SecondPlayViewController: UIViewController {
     
     var newP:[PlayerData]?
     
+    var newG:[GameData]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // grab playerdata to load
         do {
             self.newP = try context.fetch(PlayerData.fetchRequest())
+            self.newG = try context.fetch(GameData.fetchRequest())
         }
         catch{
             
@@ -25,14 +29,14 @@ class SecondPlayViewController: UIViewController {
         
         let currentName = (self.newP?.last?.playername)!
         
-        let currentLoc = (self.newP?.last?.playerlocation)!
+        let currentLoc = (self.newG?.last?.gamelocation)!
         
         let updatedStory = storyLog.text.replacingOccurrences(of: "*insert name*", with: currentName)
         
         let updatedStory2 = updatedStory.replacingOccurrences(of: "*insert location*", with: currentLoc)
         
         storyLog.text = updatedStory2
-        // Do any additional setup after loading the view.
+         
     }
     
     @IBOutlet weak var storyLog: UITextView!

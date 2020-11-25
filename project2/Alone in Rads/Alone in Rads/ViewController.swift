@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
-    var mainMenuArray:Array<String> = ["Play", "Set Avatar", "Start Location", "Settings", "Extras"]
+    var mainMenuArray:Array<String> = ["Play", "Set Avatar", "Set Location", "Settings", "Extras"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mainMenuArray.count

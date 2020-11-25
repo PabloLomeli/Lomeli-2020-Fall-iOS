@@ -11,14 +11,22 @@
         <attribute name="gamehealth" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="gamelocation" optional="YES" attributeType="String"/>
         <attribute name="gamestatusWL" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="playerlocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlayerData" inverseName="gamelocation" inverseEntity="PlayerData"/>
+        <relationship name="currentGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlayerData" inverseName="currentGame" inverseEntity="PlayerData"/>
+        <relationship name="currentLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocationData" inverseName="currentLocation" inverseEntity="LocationData"/>
         <relationship name="storystatus" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoryData" inverseName="gamestatus" inverseEntity="StoryData"/>
     </entity>
+    <entity name="LocationData" representedClassName="LocationData" syncable="YES">
+        <attribute name="adminArea" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="fullLocation" optional="YES" attributeType="String"/>
+        <attribute name="locality" optional="YES" attributeType="String"/>
+        <relationship name="currentLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameData" inverseName="currentLocation" inverseEntity="GameData"/>
+    </entity>
     <entity name="PlayerData" representedClassName="PlayerData" syncable="YES">
-        <attribute name="playerlocation" optional="YES" attributeType="String"/>
+        <attribute name="playerage" optional="YES" attributeType="String"/>
         <attribute name="playername" optional="YES" attributeType="String"/>
         <attribute name="playersex" optional="YES" attributeType="String"/>
-        <relationship name="gamelocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameData" inverseName="playerlocation" inverseEntity="GameData"/>
+        <relationship name="currentGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameData" inverseName="currentGame" inverseEntity="GameData"/>
     </entity>
     <entity name="StoryData" representedClassName="StoryData" syncable="YES">
         <attribute name="storycurrent" optional="YES" attributeType="String"/>
@@ -31,8 +39,9 @@
     </entity>
     <elements>
         <element name="ChoiceData" positionX="-173.00390625" positionY="69.21484375" width="128" height="118"/>
-        <element name="GameData" positionX="-393.5703125" positionY="-111.15625" width="128" height="118"/>
+        <element name="GameData" positionX="-393.5703125" positionY="-111.15625" width="128" height="133"/>
         <element name="PlayerData" positionX="-163.24609375" positionY="-98.5" width="128" height="103"/>
         <element name="StoryData" positionX="-564.35546875" positionY="39.41015625" width="128" height="148"/>
+        <element name="LocationData" positionX="-290" positionY="211.23046875" width="128" height="118"/>
     </elements>
 </model>

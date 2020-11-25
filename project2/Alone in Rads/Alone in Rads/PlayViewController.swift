@@ -20,14 +20,39 @@ class PlayViewController: UIViewController {
     
     @IBOutlet weak var playerName: UITextField!
     @IBOutlet weak var playerSex: UITextField!
+    @IBOutlet weak var playerAge: UITextField!
+    
+    var currentG:[GameData]?
+    var currentL:[LocationData]?
     
     @IBAction func savePlayerData(_ sender: Any) {
         let pName = playerName.text
         let pSex = playerSex.text
+        let pAge = playerAge.text
         
-        let newPlayer = PlayerData(context: self.context)
-        newPlayer.playername = pName
-        newPlayer.playersex = pSex
+        let currentPlayer = PlayerData(context: self.context)
+        
+        // grab latest game data to use
+        do {
+            self.currentL = try context.fetch(LocationData.fetchRequest())
+        }
+        catch{
+            
+        }
+        
+        let newG = GameData(context: self.context)
+        
+        if(currentL?.last?.fullLocation != nil){
+            newG.gamelocation = currentL?.last?.fullLocation
+        }
+         else
+        {
+            newG.gamelocation = "(Please choose 'Set Location' in main menu on a new save)"
+        }
+        
+        currentPlayer.playername = pName
+        currentPlayer.playersex = pSex
+        currentPlayer.playerage = pAge
         
         try! self.context.save()
         

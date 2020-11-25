@@ -19,8 +19,9 @@ extension GameData {
     @NSManaged public var gamehealth: Int32
     @NSManaged public var gamelocation: String?
     @NSManaged public var gamestatusWL: Int32
-    @NSManaged public var playerlocation: PlayerData?
+    @NSManaged public var currentGame: PlayerData?
     @NSManaged public var storystatus: StoryData?
+    @NSManaged public var currentLocation: LocationData?
 
 }
 

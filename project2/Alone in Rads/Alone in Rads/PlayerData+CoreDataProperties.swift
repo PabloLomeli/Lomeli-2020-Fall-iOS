@@ -16,10 +16,10 @@ extension PlayerData {
         return NSFetchRequest<PlayerData>(entityName: "PlayerData")
     }
 
-    @NSManaged public var playerlocation: String?
     @NSManaged public var playername: String?
     @NSManaged public var playersex: String?
-    @NSManaged public var gamelocation: GameData?
+    @NSManaged public var playerage: String?
+    @NSManaged public var currentGame: GameData?
 
 }
 

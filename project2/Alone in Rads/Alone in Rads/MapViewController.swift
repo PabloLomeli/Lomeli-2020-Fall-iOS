@@ -18,8 +18,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    var newP:[PlayerData]?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,14 +54,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
                 self.labelAdd.text = "\(placemark.locality!), \(placemark.administrativeArea!), \(placemark.country!)"
                 
-                do {
-                    self.newP = try context.fetch(PlayerData.fetchRequest())
-                }
-                catch{
-                    
-                }
+                let newLoc = LocationData(context: self.context)
                 
-                newP?.last?.playerlocation = "\(placemark.locality!), \(placemark.administrativeArea!), \(placemark.country!)"
+                newLoc.locality = "\(placemark.locality!)"
+                newLoc.fullLocation = "\(placemark.locality!), \(placemark.administrativeArea!), \(placemark.country!)"
+                newLoc.country = "\(placemark.country!)"
+                newLoc.adminArea = "\(placemark.administrativeArea!)"
                 
                 try! self.context.save()
             }

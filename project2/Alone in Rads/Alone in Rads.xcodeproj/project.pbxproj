@@ -17,17 +17,19 @@
 		DE12A1A1254F99B100F30D3D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A1A0254F99B100F30D3D /* MapViewController.swift */; };
 		DE12A1A8254FC77200F30D3D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A1A7254FC77200F30D3D /* SettingsViewController.swift */; };
 		DE12A1AC254FC7AE00F30D3D /* ExtrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A1AB254FC7AE00F30D3D /* ExtrasViewController.swift */; };
+		DE1C2B0A256DFC8300AF4E00 /* PlayerData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C2B00256DFC8300AF4E00 /* PlayerData+CoreDataClass.swift */; };
+		DE1C2B0B256DFC8300AF4E00 /* PlayerData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C2B01256DFC8300AF4E00 /* PlayerData+CoreDataProperties.swift */; };
+		DE1C2B0C256DFC8300AF4E00 /* GameData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C2B02256DFC8300AF4E00 /* GameData+CoreDataClass.swift */; };
+		DE1C2B0D256DFC8300AF4E00 /* GameData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C2B03256DFC8300AF4E00 /* GameData+CoreDataProperties.swift */; };
+		DE1C2B0E256DFC8300AF4E00 /* ChoiceData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C2B04256DFC8300AF4E00 /* ChoiceData+CoreDataClass.swift */; };
+		DE1C2B0F256DFC8300AF4E00 /* ChoiceData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C2B05256DFC8300AF4E00 /* ChoiceData+CoreDataProperties.swift */; };
+		DE1C2B10256DFC8300AF4E00 /* StoryData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C2B06256DFC8300AF4E00 /* StoryData+CoreDataClass.swift */; };
+		DE1C2B11256DFC8300AF4E00 /* StoryData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C2B07256DFC8300AF4E00 /* StoryData+CoreDataProperties.swift */; };
+		DE1C2B12256DFC8300AF4E00 /* LocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C2B08256DFC8300AF4E00 /* LocationData+CoreDataClass.swift */; };
+		DE1C2B13256DFC8300AF4E00 /* LocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C2B09256DFC8300AF4E00 /* LocationData+CoreDataProperties.swift */; };
 		DE1C586B256374F500D0FB40 /* RadsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE1C5869256374F500D0FB40 /* RadsData.xcdatamodeld */; };
 		DE1C586F256382FA00D0FB40 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1C586E256382FA00D0FB40 /* PlayViewController.swift */; };
 		DE2F6377256CBCC200BC847F /* SecondPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2F6376256CBCC200BC847F /* SecondPlayViewController.swift */; };
-		DEC14A2F256CEBBD000A51DC /* PlayerData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A2D256CEBBD000A51DC /* PlayerData+CoreDataClass.swift */; };
-		DEC14A30256CEBBD000A51DC /* PlayerData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A2E256CEBBD000A51DC /* PlayerData+CoreDataProperties.swift */; };
-		DEC14A38256CEC4D000A51DC /* StoryData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A32256CEC4D000A51DC /* StoryData+CoreDataClass.swift */; };
-		DEC14A39256CEC4D000A51DC /* StoryData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A33256CEC4D000A51DC /* StoryData+CoreDataProperties.swift */; };
-		DEC14A3A256CEC4D000A51DC /* GameData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A34256CEC4D000A51DC /* GameData+CoreDataClass.swift */; };
-		DEC14A3B256CEC4D000A51DC /* GameData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A35256CEC4D000A51DC /* GameData+CoreDataProperties.swift */; };
-		DEC14A3C256CEC4D000A51DC /* ChoiceData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A36256CEC4D000A51DC /* ChoiceData+CoreDataClass.swift */; };
-		DEC14A3D256CEC4D000A51DC /* ChoiceData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC14A37256CEC4D000A51DC /* ChoiceData+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,17 +45,19 @@
 		DE12A1A0254F99B100F30D3D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DE12A1A7254FC77200F30D3D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DE12A1AB254FC7AE00F30D3D /* ExtrasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasViewController.swift; sourceTree = "<group>"; };
+		DE1C2B00256DFC8300AF4E00 /* PlayerData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlayerData+CoreDataClass.swift"; path = "Alone in Rads/PlayerData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE1C2B01256DFC8300AF4E00 /* PlayerData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlayerData+CoreDataProperties.swift"; path = "Alone in Rads/PlayerData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE1C2B02256DFC8300AF4E00 /* GameData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameData+CoreDataClass.swift"; path = "Alone in Rads/GameData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE1C2B03256DFC8300AF4E00 /* GameData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameData+CoreDataProperties.swift"; path = "Alone in Rads/GameData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE1C2B04256DFC8300AF4E00 /* ChoiceData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ChoiceData+CoreDataClass.swift"; path = "Alone in Rads/ChoiceData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE1C2B05256DFC8300AF4E00 /* ChoiceData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ChoiceData+CoreDataProperties.swift"; path = "Alone in Rads/ChoiceData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE1C2B06256DFC8300AF4E00 /* StoryData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoryData+CoreDataClass.swift"; path = "Alone in Rads/StoryData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE1C2B07256DFC8300AF4E00 /* StoryData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoryData+CoreDataProperties.swift"; path = "Alone in Rads/StoryData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE1C2B08256DFC8300AF4E00 /* LocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LocationData+CoreDataClass.swift"; path = "Alone in Rads/LocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE1C2B09256DFC8300AF4E00 /* LocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LocationData+CoreDataProperties.swift"; path = "Alone in Rads/LocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE1C586A256374F500D0FB40 /* RadsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RadsData.xcdatamodel; sourceTree = "<group>"; };
 		DE1C586E256382FA00D0FB40 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		DE2F6376256CBCC200BC847F /* SecondPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPlayViewController.swift; sourceTree = "<group>"; };
-		DEC14A2D256CEBBD000A51DC /* PlayerData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlayerData+CoreDataClass.swift"; path = "Alone in Rads/PlayerData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DEC14A2E256CEBBD000A51DC /* PlayerData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlayerData+CoreDataProperties.swift"; path = "Alone in Rads/PlayerData+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DEC14A32256CEC4D000A51DC /* StoryData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoryData+CoreDataClass.swift"; path = "Alone in Rads/StoryData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DEC14A33256CEC4D000A51DC /* StoryData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoryData+CoreDataProperties.swift"; path = "Alone in Rads/StoryData+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DEC14A34256CEC4D000A51DC /* GameData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameData+CoreDataClass.swift"; path = "Alone in Rads/GameData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DEC14A35256CEC4D000A51DC /* GameData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameData+CoreDataProperties.swift"; path = "Alone in Rads/GameData+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DEC14A36256CEC4D000A51DC /* ChoiceData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ChoiceData+CoreDataClass.swift"; path = "Alone in Rads/ChoiceData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DEC14A37256CEC4D000A51DC /* ChoiceData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ChoiceData+CoreDataProperties.swift"; path = "Alone in Rads/ChoiceData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +74,16 @@
 		DE12A17B254F867200F30D3D = {
 			isa = PBXGroup;
 			children = (
-				DEC14A32256CEC4D000A51DC /* StoryData+CoreDataClass.swift */,
-				DEC14A33256CEC4D000A51DC /* StoryData+CoreDataProperties.swift */,
-				DEC14A34256CEC4D000A51DC /* GameData+CoreDataClass.swift */,
-				DEC14A35256CEC4D000A51DC /* GameData+CoreDataProperties.swift */,
-				DEC14A36256CEC4D000A51DC /* ChoiceData+CoreDataClass.swift */,
-				DEC14A37256CEC4D000A51DC /* ChoiceData+CoreDataProperties.swift */,
-				DEC14A2D256CEBBD000A51DC /* PlayerData+CoreDataClass.swift */,
-				DEC14A2E256CEBBD000A51DC /* PlayerData+CoreDataProperties.swift */,
+				DE1C2B00256DFC8300AF4E00 /* PlayerData+CoreDataClass.swift */,
+				DE1C2B01256DFC8300AF4E00 /* PlayerData+CoreDataProperties.swift */,
+				DE1C2B02256DFC8300AF4E00 /* GameData+CoreDataClass.swift */,
+				DE1C2B03256DFC8300AF4E00 /* GameData+CoreDataProperties.swift */,
+				DE1C2B04256DFC8300AF4E00 /* ChoiceData+CoreDataClass.swift */,
+				DE1C2B05256DFC8300AF4E00 /* ChoiceData+CoreDataProperties.swift */,
+				DE1C2B06256DFC8300AF4E00 /* StoryData+CoreDataClass.swift */,
+				DE1C2B07256DFC8300AF4E00 /* StoryData+CoreDataProperties.swift */,
+				DE1C2B08256DFC8300AF4E00 /* LocationData+CoreDataClass.swift */,
+				DE1C2B09256DFC8300AF4E00 /* LocationData+CoreDataProperties.swift */,
 				DE12A186254F867200F30D3D /* Alone in Rads */,
 				DE12A185254F867200F30D3D /* Products */,
 			);
@@ -182,23 +188,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC14A30256CEBBD000A51DC /* PlayerData+CoreDataProperties.swift in Sources */,
-				DEC14A3B256CEC4D000A51DC /* GameData+CoreDataProperties.swift in Sources */,
+				DE1C2B10256DFC8300AF4E00 /* StoryData+CoreDataClass.swift in Sources */,
+				DE1C2B11256DFC8300AF4E00 /* StoryData+CoreDataProperties.swift in Sources */,
+				DE1C2B0B256DFC8300AF4E00 /* PlayerData+CoreDataProperties.swift in Sources */,
+				DE1C2B0D256DFC8300AF4E00 /* GameData+CoreDataProperties.swift in Sources */,
 				DE12A18C254F867200F30D3D /* ViewController.swift in Sources */,
-				DEC14A3A256CEC4D000A51DC /* GameData+CoreDataClass.swift in Sources */,
 				DE12A19D254F902F00F30D3D /* PhotoViewController.swift in Sources */,
+				DE1C2B13256DFC8300AF4E00 /* LocationData+CoreDataProperties.swift in Sources */,
 				DE2F6377256CBCC200BC847F /* SecondPlayViewController.swift in Sources */,
 				DE12A1A8254FC77200F30D3D /* SettingsViewController.swift in Sources */,
 				DE12A1AC254FC7AE00F30D3D /* ExtrasViewController.swift in Sources */,
-				DEC14A3D256CEC4D000A51DC /* ChoiceData+CoreDataProperties.swift in Sources */,
+				DE1C2B12256DFC8300AF4E00 /* LocationData+CoreDataClass.swift in Sources */,
 				DE1C586F256382FA00D0FB40 /* PlayViewController.swift in Sources */,
-				DEC14A2F256CEBBD000A51DC /* PlayerData+CoreDataClass.swift in Sources */,
-				DEC14A38256CEC4D000A51DC /* StoryData+CoreDataClass.swift in Sources */,
-				DEC14A3C256CEC4D000A51DC /* ChoiceData+CoreDataClass.swift in Sources */,
+				DE1C2B0C256DFC8300AF4E00 /* GameData+CoreDataClass.swift in Sources */,
+				DE1C2B0A256DFC8300AF4E00 /* PlayerData+CoreDataClass.swift in Sources */,
 				DE12A188254F867200F30D3D /* AppDelegate.swift in Sources */,
 				DE12A1A1254F99B100F30D3D /* MapViewController.swift in Sources */,
-				DEC14A39256CEC4D000A51DC /* StoryData+CoreDataProperties.swift in Sources */,
+				DE1C2B0E256DFC8300AF4E00 /* ChoiceData+CoreDataClass.swift in Sources */,
 				DE1C586B256374F500D0FB40 /* RadsData.xcdatamodeld in Sources */,
+				DE1C2B0F256DFC8300AF4E00 /* ChoiceData+CoreDataProperties.swift in Sources */,
 				DE12A18A254F867200F30D3D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
