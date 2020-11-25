@@ -552,7 +552,7 @@
                                 <rect key="frame" x="20" y="558" width="374" height="254"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SFX-Bn-Fb1">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="SFX-Bn-Fb1">
                                         <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SFX-Bn-Fb1" id="acw-xb-4Ld">
@@ -873,6 +873,7 @@
                         <outlet property="playerAge" destination="wfT-Ra-mgh" id="god-bb-1zX"/>
                         <outlet property="playerName" destination="jd7-NY-Vip" id="O9D-2W-AlC"/>
                         <outlet property="playerSex" destination="FWh-sz-G1A" id="zQc-Xs-9Bl"/>
+                        <outlet property="saveTable" destination="Vy8-ex-MNQ" id="U0I-jJ-xNS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gh-pc-ujS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

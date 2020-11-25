@@ -40,8 +40,8 @@
     <elements>
         <element name="ChoiceData" positionX="-173.00390625" positionY="69.21484375" width="128" height="118"/>
         <element name="GameData" positionX="-393.5703125" positionY="-111.15625" width="128" height="133"/>
+        <element name="LocationData" positionX="-290" positionY="211.23046875" width="128" height="118"/>
         <element name="PlayerData" positionX="-163.24609375" positionY="-98.5" width="128" height="103"/>
         <element name="StoryData" positionX="-564.35546875" positionY="39.41015625" width="128" height="148"/>
-        <element name="LocationData" positionX="-290" positionY="211.23046875" width="128" height="118"/>
     </elements>
 </model>
