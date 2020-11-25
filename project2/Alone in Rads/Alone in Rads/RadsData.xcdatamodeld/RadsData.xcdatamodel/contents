@@ -24,7 +24,7 @@
     </entity>
     <entity name="PlayerData" representedClassName="PlayerData" syncable="YES">
         <attribute name="playerage" optional="YES" attributeType="String"/>
-        <attribute name="playeravatar" optional="YES"/>
+        <attribute name="playeravatar" optional="YES" attributeType="Transformable"/>
         <attribute name="playername" optional="YES" attributeType="String"/>
         <attribute name="playersex" optional="YES" attributeType="String"/>
         <relationship name="currentGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameData" inverseName="currentGame" inverseEntity="GameData"/>
