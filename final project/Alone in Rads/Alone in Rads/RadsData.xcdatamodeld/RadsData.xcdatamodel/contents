@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ChoiceData" representedClassName="ChoiceData" syncable="YES">
+        <attribute name="choicebad" optional="YES" attributeType="String"/>
+        <attribute name="choicegood" optional="YES" attributeType="String"/>
+        <attribute name="choiceneither" optional="YES" attributeType="String"/>
+        <relationship name="losecondition" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoryData" inverseName="losechoice" inverseEntity="StoryData"/>
+        <relationship name="wincondition" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoryData" inverseName="winchoice" inverseEntity="StoryData"/>
+    </entity>
+    <entity name="GameData" representedClassName="GameData" syncable="YES">
+        <attribute name="gamehealth" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="gamelocation" optional="YES" attributeType="String"/>
+        <attribute name="gamestatusWL" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="currentGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlayerData" inverseName="currentGame" inverseEntity="PlayerData"/>
+        <relationship name="currentLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocationData" inverseName="currentLocation" inverseEntity="LocationData"/>
+        <relationship name="gamestatus" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoryData" inverseName="gamestatus" inverseEntity="StoryData"/>
+    </entity>
+    <entity name="LocationData" representedClassName="LocationData" syncable="YES">
+        <attribute name="adminArea" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="fullLocation" optional="YES" attributeType="String"/>
+        <attribute name="locality" optional="YES" attributeType="String"/>
+        <relationship name="currentLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameData" inverseName="currentLocation" inverseEntity="GameData"/>
+    </entity>
+    <entity name="PlayerData" representedClassName="PlayerData" syncable="YES">
+        <attribute name="playerage" optional="YES" attributeType="String"/>
+        <attribute name="playeravatar" optional="YES" attributeType="Transformable"/>
+        <attribute name="playername" optional="YES" attributeType="String"/>
+        <attribute name="playersex" optional="YES" attributeType="String"/>
+        <relationship name="currentGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameData" inverseName="currentGame" inverseEntity="GameData"/>
+    </entity>
+    <entity name="StoryData" representedClassName="StoryData" syncable="YES">
+        <attribute name="storycurrent" optional="YES" attributeType="String"/>
+        <attribute name="storylosechoice" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="storystatus" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="storywinchoice" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="gamestatus" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameData" inverseName="gamestatus" inverseEntity="GameData"/>
+        <relationship name="losechoice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChoiceData" inverseName="losecondition" inverseEntity="ChoiceData"/>
+        <relationship name="winchoice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChoiceData" inverseName="wincondition" inverseEntity="ChoiceData"/>
+    </entity>
+    <elements>
+        <element name="ChoiceData" positionX="-173.00390625" positionY="69.21484375" width="128" height="118"/>
+        <element name="GameData" positionX="-393.5703125" positionY="-111.15625" width="128" height="133"/>
+        <element name="LocationData" positionX="-660.13671875" positionY="-147.69140625" width="128" height="118"/>
+        <element name="PlayerData" positionX="-154.12109375" positionY="-143.09765625" width="128" height="118"/>
+        <element name="StoryData" positionX="-564.35546875" positionY="39.41015625" width="128" height="148"/>
+    </elements>
+</model>
