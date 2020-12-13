@@ -30,12 +30,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
     }
 
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
             tableView.deselectRow(at: indexPath, animated: false)
             if( indexPath.row == 0){
-                let detailsViewController = (storyboard?.instantiateViewController(identifier: "PlayViewController"))!
-                present(detailsViewController, animated: true, completion: nil)
+                //let detailsViewController = (storyboard?.instantiateViewController(identifier: "PlayViewController"))!
+                performSegue(withIdentifier: "play", sender: self)
+                //present(detailsViewController, animated: true, completion: nil)
             }
             else if( indexPath.row == 1){
                 let detailsViewController = (storyboard?.instantiateViewController(identifier: "PhotoViewController"))!

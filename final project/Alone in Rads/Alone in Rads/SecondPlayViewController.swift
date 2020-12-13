@@ -8,12 +8,10 @@
 import UIKit
 
 class SecondPlayViewController: UIViewController {
-    
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    var newP:[PlayerData]?
-    
-    var newG:[GameData]?
+
+    @IBAction func saveExit(_ sender: Any) {
+        performSegue(withIdentifier: "saveExit", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +36,12 @@ class SecondPlayViewController: UIViewController {
         storyLog.text = updatedStory2
          
     }
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var newP:[PlayerData]?
+    
+    var newG:[GameData]?
     
     @IBOutlet weak var storyLog: UITextView!
     

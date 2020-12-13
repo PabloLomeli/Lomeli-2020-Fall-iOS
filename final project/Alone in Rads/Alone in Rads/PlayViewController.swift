@@ -10,6 +10,9 @@ import CoreData
 
 class PlayViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBAction func returnMenu(_ sender: Any) {
+        performSegue(withIdentifier: "mainMenu", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,7 +32,12 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         }
         
+        if(players?.last?.playername != nil){
+            continueButton.isEnabled = true;
+        }
     }
+    
+    @IBOutlet weak var continueButton: UIButton!
     
     @IBOutlet weak var saveTable: UITableView!
     @IBOutlet weak var playerName: UITextField!
@@ -80,19 +88,18 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
         present(detailsViewController, animated: true, completion: nil)
     }
     
+    // continue button
     @IBAction func continueWOC(_ sender: Any) {
         let detailsViewController = (storyboard?.instantiateViewController(identifier: "SecondPlayViewController"))!
         present(detailsViewController, animated: true, completion: nil)
     }
-    
-    
     
     // player saves table logic
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return players?.count ?? 0
     }
     
-    
+    // player saves loaded onto table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
         
@@ -104,13 +111,15 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    // player saves load
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
             tableView.deselectRow(at: indexPath, animated: false)
             // need to add save selection functionality
         }
 
-        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 60
-        }
+    // size of rows
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
 }

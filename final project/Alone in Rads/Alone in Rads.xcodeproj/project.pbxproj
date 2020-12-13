@@ -12,7 +12,6 @@
 		DE12A18C254F867200F30D3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A18B254F867200F30D3D /* ViewController.swift */; };
 		DE12A18F254F867200F30D3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12A18D254F867200F30D3D /* Main.storyboard */; };
 		DE12A191254F867200F30D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE12A190254F867200F30D3D /* Assets.xcassets */; };
-		DE12A194254F867200F30D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12A192254F867200F30D3D /* LaunchScreen.storyboard */; };
 		DE12A19D254F902F00F30D3D /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A19C254F902F00F30D3D /* PhotoViewController.swift */; };
 		DE12A1A1254F99B100F30D3D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A1A0254F99B100F30D3D /* MapViewController.swift */; };
 		DE12A1A8254FC77200F30D3D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12A1A7254FC77200F30D3D /* SettingsViewController.swift */; };
@@ -39,7 +38,6 @@
 		DE12A18B254F867200F30D3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE12A18E254F867200F30D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE12A190254F867200F30D3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DE12A193254F867200F30D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE12A195254F867200F30D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE12A19C254F902F00F30D3D /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		DE12A1A0254F99B100F30D3D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				DE12A1AB254FC7AE00F30D3D /* ExtrasViewController.swift */,
 				DE12A18D254F867200F30D3D /* Main.storyboard */,
 				DE12A190254F867200F30D3D /* Assets.xcassets */,
-				DE12A192254F867200F30D3D /* LaunchScreen.storyboard */,
 				DE12A195254F867200F30D3D /* Info.plist */,
 				DE1C5869256374F500D0FB40 /* RadsData.xcdatamodeld */,
 			);
@@ -175,7 +172,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE12A194254F867200F30D3D /* LaunchScreen.storyboard in Resources */,
 				DE12A191254F867200F30D3D /* Assets.xcassets in Resources */,
 				DE12A18F254F867200F30D3D /* Main.storyboard in Resources */,
 			);
@@ -220,14 +216,6 @@
 				DE12A18E254F867200F30D3D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DE12A192254F867200F30D3D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE12A193254F867200F30D3D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
