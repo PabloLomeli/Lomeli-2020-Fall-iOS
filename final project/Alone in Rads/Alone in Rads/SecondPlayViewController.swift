@@ -156,6 +156,8 @@ class SecondPlayViewController: UIViewController {
             }
             
             if(string.contains("terminated")){
+                storyLog.text.append(string)
+                scrollTextViewToBottom(textView: storyLog)
                 endstory()
             }
             else {
