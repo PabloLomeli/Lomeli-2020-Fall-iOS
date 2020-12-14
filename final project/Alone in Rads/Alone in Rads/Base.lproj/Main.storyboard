@@ -178,7 +178,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="G5B-De-d26"/>
                                 </constraints>
-                                <string key="text">You wake up in a dusty half torn down house from a neighborhood you recongize in *insert location*. A much different time, and you reflect saying to yourself, "Man, you've come a long way *insert name*." After taking some time to shake off the drowsiness from the long session of sleeping, you pack your things and get ready to venture out into the open again to find life essentials.  (insert more text for story)</string>
+                                <mutableString key="text">You wake up in a dusty half torn down house from a neighborhood you recongize in *insert location*. A much different time, and you reflect saying to yourself, "Man, you've come a long way *insert name*." After taking some time to shake off the drowsiness from the long session of sleeping, you pack your things and get ready to venture out into the open again to find life essentials. You decide to head into a </mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -528,9 +528,13 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="choice1btn" destination="SKd-Gg-jWZ" id="Tk8-6K-Nfe"/>
                         <outlet property="choice1label" destination="Z70-dk-I74" id="qWi-Ce-m3K"/>
+                        <outlet property="choice2btn" destination="Tlx-VF-hbH" id="leq-e3-mDe"/>
                         <outlet property="choice2label" destination="2l1-HO-UNk" id="wpN-6x-kz1"/>
+                        <outlet property="choice3btn" destination="VR4-jm-otz" id="Jpn-AH-bUE"/>
                         <outlet property="choice3label" destination="dDe-BZ-W8Q" id="Arb-ad-zWc"/>
+                        <outlet property="choice4btn" destination="pIb-X0-fjH" id="qlW-oB-aU0"/>
                         <outlet property="choice4label" destination="bOv-yg-gGn" id="Bub-Jc-a1g"/>
                         <outlet property="playerHealth" destination="Cfn-DM-qAa" id="nB8-9Q-MPJ"/>
                         <outlet property="storyLog" destination="2hw-yg-nbI" id="JQd-2k-kSu"/>

@@ -103,9 +103,9 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
         
-        let save = self.players![indexPath.row]
+        let saveIndex = self.players![indexPath.row]
         
-        cell.textLabel?.text = save.playername
+        cell.textLabel?.text = saveIndex.playername
         
         print(indexPath.row)
         return cell
