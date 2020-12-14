@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return mainMenuArray.count
     }
     
-    
+    // coreData printing on table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
         cell.textLabel?.text = mainMenuArray[indexPath.row]
@@ -24,13 +24,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    
+    // table press logic
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
             tableView.deselectRow(at: indexPath, animated: false)
@@ -57,6 +56,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
 
+        // table row height
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             return 60
         }
